@@ -1,0 +1,9 @@
+If you are getting connection issues while entering dedicated servers, please contact the server owner to add this '-AccountsCacheNum=10240' in the .bat file for the server. And then restart the server.
+
+https://youtu.be/xZT9PkN8dUI  The Front - Dedicated Server Setup Tutorial
+https://youtu.be/Ak1m-uFv7TM The Front - Solo/Hosted Server Setup Tutorial
+
+Solution to solve the issue of not getting the server list
+Step 1: Download the jsonfiles file from repo.  (.rar or .zip it's the same)
+Step 2: Overwrite your original files at \steam\steamapps\common\The Front\ProjectWar\ExtraFiles
+Step 3: Restart the game
