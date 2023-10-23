@@ -4,6 +4,9 @@ To log in as admin do the following steps:
 Make sure your UID is set in your GameUserSettings.ini or launch params (per our install guide) and then hit the ` Backtick key next to the 1 key at the top. This will open up the command window in game.
 
 For some commands, you will need a user's Steam64ID. You can obtain that by going to SteamID.io, adding their Steam account name, and then copying the data from the Steam64 value.
+
+Press Shift + G to open up admin panel in game with many of the settings and item spawn commands.
+
 List of Admin Commands
 God
 Allows your character to go into God mode which prevents your character from being harmed
