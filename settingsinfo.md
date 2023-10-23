@@ -1,337 +1,495 @@
-Settings Info
-Running Server Commands
-To log in as admin do the following steps:
+# Settings Info
+
+### Credit to Survival Servers for list of commands.  
+[To support them click here to explore their services and order their game server services.](https://www.survivalservers.com/)
+
+*We are not sponsored, we just appreciate their list of commands and no money is made by us nor can we enodorse their services.*
+## Running Server Commands
+### To log in as admin do the following steps:
 
 Make sure your UID is set in your GameUserSettings.ini or launch params (per our install guide) and then hit the ` Backtick key next to the 1 key at the top. This will open up the command window in game.
 
 For some commands, you will need a user's Steam64ID. You can obtain that by going to SteamID.io, adding their Steam account name, and then copying the data from the Steam64 value.
 
-- Press Shift + G to open up admin panel in game with many of the settings and item spawn commands.
+### Admin Panel
+Press `Shift + G` to open up admin panel in game with many of the settings and item spawn commands.
 
-The Front ServerTags=
-0= PVP
-1= PVE
-2= EXP Multiplikator
-3= GatheringRate
-4= KeepInventory
-5= 45d wipe
-6= 15d wipe
-7= 30d wipe
-8= 60d wipe
+## The Front ServerTags
+- 0= PVP
+- 1= PVE
+- 2= EXP Multiplier
+- 3= GatheringRate
+- 4= KeepInventory
+- 5= 45d wipe
+- 6= 15d wipe
+- 7= 30d wipe
+- 8= 60d wipe
 
-List of Admin Commands
-God
+## List of Admin Commands
+- `God`
 Allows your character to go into God mode which prevents your character from being harmed
-Fly
+
+- `Fly`
 Allows you to fly around the map
-Walk
+
+- `Walk`
 Reverts to walk mode for your character
-SloMode [0-1000]
+
+- `SloMode [0-1000]`
 Default is 1. Defines how fast your server runs, useful when combined with Fly command to navigate around map
-GMAddItems [itemID] [amount] [playerID] (if playerID is not entered, this command will default to yourself)
+
+- `GMAddItems [itemID] [amount] [playerID]` (if playerID is not entered, this command will default to yourself)
 Give item to player
-AddTargetPlayerExp [playerID] [EXP value]
+
+- `AddTargetPlayerExp [playerID] [EXP value]`
 Command + Account ID + EXP
-GMSpawnNPCByLocation [creatureID] [level] [coordinate x] [coordinate y] [coordinate z]
+
+- `GMSpawnNPCByLocation [creatureID] [level] [coordinate x] [coordinate y] [coordinate z]`
 Does the same as below but without the player id
-GMSpawnNPCByPlayerGuid [creatureID] [level] [amount] [distance (in meters)] [playerID]
+
+- `GMSpawnNPCByPlayerGuid [creatureID] [level] [amount] [distance (in meters)] [playerID]`
 Spawn specified creature ID (if playerID is not entered, this command will default to yourself)
-GotoPlayerByAccount [playerID]
+
+- `GotoPlayerByAccount [playerID]`
 Takes you to the player
-RelocatePlayerToGM [playerID]
+
+- `RelocatePlayerToGM [playerID]`
 Allows you to move a player to yourself
-DestroyPlayerByGUID [playerID]
+
+- `DestroyPlayerByGUID [playerID]`
 Allows you to kill the player specified
-GMClearInventory [playerID]
+
+- `GMClearInventory [playerID]`
 Clears a players inventory
-UnlockTargetAllRecipe [playerID]
+
+- `UnlockTargetAllRecipe [playerID]`
 Unlocks all recipes for a player ("self" to use on self)
-UnlockTargetAllTalent [playerID]
+
+- `UnlockTargetAllTalent [playerID]`
 Unlocks all Talents ("self" to use on self)
-KickPlayerOff [playerID]
+
+- `KickPlayerOff [playerID]`
 Allows you to kick a player from the server
-BanPlayer [playerID] login
+
+- `BanPlayer [playerID] login`
 Allows you to ban a player from logging back into the server
-PermitPlayer [playerID] login
+
+- `PermitPlayer [playerID] login`
 Allows you to unban a player
-BanPlayer [playerID] chat
+
+- `BanPlayer [playerID] chat`
 Allows you to ban a player from using the in game chat
-PermitPlayer [playerID] chat
+
+- `PermitPlayer [playerID] chat`
 Allows you to permit a player to use the in game chat
-CloseServer
+
+- `CloseServer`
 Close server
-SaveWorld
+
+- `SaveWorld`
 Save server data
-SetTime [time value]
+
+- `SetTime [time value]`
 Set world time
-SetWeather [weather ID] [region ID]
+
+- `SetWeather [weather ID] [region ID]`
 Sets the server weather
-hide 1(Enabled)/0 (Disabled)
+
+- `hide 1(Enabled)/0 (Disabled)`
 Renders monster, player, NPC, or defensive structure invisible.
-SetAttribute 36 (attribute number) [value]
+
+- `SetAttribute 36 (attribute number) [value]`
 sets speed
-Ghost
+
+- `Ghost`
 Enables flight and removes character collision, allowing them to pass through objects.
-PerspectiveConstruct 0 (don't display)/1 (display)
+
+- `PerspectiveConstruct 0 (don't display)/1 (display)`
 Displays structure names and structure owner names, making it easier to find buildings on the map.
-PerspectivePlayer 0 (don't display)/1 (display)
+
+- `PerspectivePlayer 0 (don't display)/1 (display)`
 Displays player names, making it easier to find players.
-goto x y z
+
+- `goto x y z`
 Command + coordinates
-ClearAllNPC
+
+- `ClearAllNPC`
 Kills all spawned NPCs
-SetPlayerScaleRate [scale]
+
+- `SetPlayerScaleRate [scale]`
 Changes the size of your character model.
-ClearAllPlayersGodMode
+
+- `ClearAllPlayersGodMode`
 Affects all players on the current server.
-ActivateInfiniteStamina 1 (Enabled)/0 (Disabled)
+
+- `ActivateInfiniteStamina 1 (Enabled)/0 (Disabled)`
 Enable/disable infinite stamina
-ActivateIgnoreEnvironment 1(Enabled)/0 (Disabled)
+
+- `ActivateIgnoreEnvironment 1(Enabled)/0 (Disabled)`
 Enable/disable environmental immunity
-ActivateInfiniteRecoverHealth 1 (Enabled)/0 (Disabled)
+
+- `ActivateInfiniteRecoverHealth 1 (Enabled)/0 (Disabled)`
 Recovers Max HP every second.
-KillGuildAll 1
+
+- `KillGuildAll 1`
 If target player is not on a squad, only they will be affected. If target player is on a squad, the whole squad will be affected. Upon death/destruction, items will be dropped.
-KillGuildAll 0
+
+- `KillGuildAll 0`
 If target player is not on a squad, only they will be affected. If target player is on a squad, the whole squad will be affected. Upon death/destruction, items will not be dropped.
-KillRadiusGuildConstruct 1 [radius (in meters)]
+
+- `KillRadiusGuildConstruct 1 [radius (in meters)]`
 Command + radius parameter. If target player is not on a squad, only they will be affected. If target player is on a squad, the whole squad will be affected.
-KillRadiusGuildConstruct 0 [radius (in meters)]
+
+- `KillRadiusGuildConstruct 0 [radius (in meters)]`
 Command + radius parameter. If target player is not on a squad, only they will be affected. If target player is on a squad, the whole squad will be affected.
-KillRadiusGuildVehicle 1 or 0 [radius (in meters)]
+
+- `KillRadiusGuildVehicle 1 or 0 [radius (in meters)]`
 If target player is not on a squad, only they will be affected. If target player is on a squad, the whole squad will be affected.
-ClearAttackCityCD [Player ID]
+
+- `ClearAttackCityCD [Player ID]`
 Clears target player's supply cooldown.
-SetEnableSuperKill
+
+- `SetEnableSuperKill`
 Enables one-hit kills on creatures, vehicles, and structures (guns can also destroy structures).
-JoinGuild
+
+- `JoinGuild`
 Select a squad before entering this command.
-SetGuildAdmin 1/0
+
+- `SetGuildAdmin 1/0`
 You will become the squad captain, and the original squad captain will be demoted to a member. This function is only for GM operation.
-ForcedChangeGuildName [squad GUID] [new squad name]
+
+- `ForcedChangeGuildName [squad GUID] [new squad name]`
 Squad ID + new name; must pass duplicate name detection.
-JoinGuildByGuid [squad GUID]
+
+- `JoinGuildByGuid [squad GUID]`
 Command + squad ID (ignores squad player limit).
-KillInteractObject
+
+- `KillInteractObject`
 Kills unit you are facing (any structure, creature, vehicle).
-GMCreatorMode Enable state (1 Enabled, 0 Disabled)
+
+- `GMCreatorMode Enable state (1 Enabled, 0 Disabled)`
 Crafting and repairing will not require materials.
-Shift+C and Shift+V
+
+- `Shift+C and Shift+V`
 Enables use of specific shortcut keys to switch to an overhead perspective of a player, at the same time enabling noclip, flight, and invulnerability.
-List of Server Advanced Settings Commands
-SetQueueThreshold [amount]
+
+## List of Server Advanced Settings Commands
+- `SetQueueThreshold [amount]`
 The max number of players on your server
-SetMaxQueueSize [amount]
+
+- `SetMaxQueueSize [amount]`
 The max number of players on your server
-SetIsCanSelfDamage 0(Disable)/1(Enable)
+
+- `SetIsCanSelfDamage 0(Disable)/1(Enable)`
 Allows players to damage themselves
-SetIsCanFriendDamage 0 (Disable)/1 (Enable)
+
+- `SetIsCanFriendDamage 0 (Disable)/1 (Enable)`
 Allows squadmates to damage each other
-SetCanChat 1 (Allowed)  0 (Not allowed)
+
+- `SetCanChat 1 (Allowed)  0 (Not allowed)`
 When disabled, prevents players from sending chat messages in-game
-MailAttchEnable 0 (Not allowed)/1 (Allowed)
+
+- `MailAttchEnable 0 (Not allowed)/1 (Allowed)`
 When disabled, prevents receiving attachments in-game
-SetSaveGameInterval [seconds]
+
+- `SetSaveGameInterval [seconds]`
 Server archive interval (in seconds)
-GMSetOverlapRatio [multiplier]
+
+- `GMSetOverlapRatio [multiplier]`
 Stack limit for each type of item
-GMSetDeathDropMode [parameter]
+
+- `GMSetDeathDropMode [parameter]`
 0 = No drops, 1 = Drop all, 2 = Drop inventory (does not include equipped or hotkey items)
-SetConstructDisableRot 1 (Disabled) 0 (Enabled)
+
+- `SetConstructDisableRot 1 (Disabled) 0 (Enabled)`
 When enabled, structures will decay
-GMSetCanDropItem 0= No drops; 1= All drop
+
+- `GMSetCanDropItem 0= No drops; 1= All drop`
 When enabled, creatures and structures will drop items when killed/destroyed
-GMSetCanDiscardItem 0 (cannot discard)/1 (can discard)
+
+- `GMSetCanDiscardItem 0 (cannot discard)/1 (can discard)`
 Set whether players can discard items.
-SetPlayerHealthDyingState 1 (Wounded state is enabled)/0 (Wounded state is disabled)
+
+- `SetPlayerHealthDyingState 1 (Wounded state is enabled)/0 (Wounded state is disabled)`
 Enables whether wounded state is triggered when HP falls to 0, or player immediately dies
-AddGM [Account ID] [GM level]
+
+- `AddGM [Account ID] [GM level]`
 Enter a 17-digit Steam ID. Use semicolons between each ID. GM level defaults to highest level (Lv. 25)
-RemoveGM [AccountID]
+
+- `RemoveGM [AccountID]`
 Removes an admin. Format: AccountID
-ToggleGMTitleShow 0 (Not displayed)\1 (Displayed)
+
+- `ToggleGMTitleShow 0 (Not displayed)\1 (Displayed)`
 Toggles special admin icon.
-GMSetDiscardBoxLifeSpan [time (in seconds)] (Default -1 to use default settings)
+
+- `GMSetDiscardBoxLifeSpan [time (in seconds)] (Default -1 to use default settings)`
 Items discarded will disappear after this amount of time
-GMSetDeathInventoryLifeSpan [time (in seconds)] (Default -1 to use default settings)
+
+- `GMSetDeathInventoryLifeSpan [time (in seconds)] (Default -1 to use default settings)`
 Items dropped on death will disappear after this amount of time
-SetAttackCityCdRatio
+
+- `SetAttackCityCdRatio`
 Multiplies the cooldown time between supply deliveries
-SetGMRebirthBaseCD [time (in seconds)]
+
+- `SetGMRebirthBaseCD [time (in seconds)]`
 Basic revival cooldown duration
-SetGMRebirthExtraCD [time (in seconds)]
+
+- `SetGMRebirthExtraCD [time (in seconds)]`
 Amount by which revival cooldown increases after multiple deaths
-SetGMPenaltiesMaxNum [times]
+
+- `SetGMPenaltiesMaxNum [times]`
 Death penalty times
-SetGMPenaltiesCD [time (in seconds)]
+
+- `SetGMPenaltiesCD [time (in seconds)]`
 Time after which stacked revival cooldowns are reset
-OpenAllHouseFlag 0 (Disabled)/1 (Enabled)
+
+- `OpenAllHouseFlag 0 (Disabled)/1 (Enabled)`
 Displays the location of other players' Beacons on the map
-List of Character Survival Commands
-SetPlayerHotDefAddRate [multiplier]
+
+## List of Character Survival Commands
+- `SetPlayerHotDefAddRate [multiplier]`
 Multiplies character Heat RES.
-SetPlayerIceDefAddRate [multiplier]
+
+- `SetPlayerIceDefAddRate [multiplier]`
 Multiplies character Cold RES.
-SetFriendDisplayDistance [distance (in meters)]
+
+- `SetFriendDisplayDistance [distance (in meters)]`
 Max distance at which you can see a squadmate's name (in meters)
-SetEnemyDisplayDistance [distance (in meters)]
+
+- `SetEnemyDisplayDistance [distance (in meters)]`
 Max distance at which you can see a non-squadmate's name (in meters)
-SetPlayerDeathAvatarItemDurableRate [multiplier]
+
+- `SetPlayerDeathAvatarItemDurableRate [multiplier]`
 On death, the Durability of equipped items will fall by max Durability times this amount (does not affect drops)
-SetPlayerDeatShortcutItemDurableRate [multiplier]
+
+- `SetPlayerDeatShortcutItemDurableRate [multiplier]`
 On death, the Durability of hotbar items will fall by max Durability times this amount (does not affect drops)
-GMSetCraftTimeRate [multiplier]
+
+- `GMSetCraftTimeRate [multiplier]`
 Multiplies item crafting/repair time.
-SetPlayerAddExpRate [multiplier]
+
+- `SetPlayerAddExpRate [multiplier]`
 Multiplies all XP earned.
-SetPlayerKillAddExpRate [multiplier]
+
+- `SetPlayerKillAddExpRate [multiplier]`
 Multiplies XP earned from killing monsters
-SetPlayerFarmAddExpRate [multiplier]
+
+- `SetPlayerFarmAddExpRate [multiplier]`
 Multiplies XP earned from collecting resources
-SetPlayerCraftAddExpRate [multiplier]
+
+- `SetPlayerCraftAddExpRate [multiplier]`
 Multiplies XP earned from crafting items
-SetMoveSpeedRate [multiplier]
+
+- `SetMoveSpeedRate [multiplier]`
 Multiplies movement speed
-SetJumpHeightRate [multiplier]
+
+- `SetJumpHeightRate [multiplier]`
 Multiplies jump height
-SetPlayerLandedDamageRate [multiplier]
+
+- `SetPlayerLandedDamageRate [multiplier]`
 Multiplies damage taken from falls.
-SetPlayerMaxHealthRate [multiplier]
+
+- `SetPlayerMaxHealthRate [multiplier]`
 Multiplies max HP.
-SetLifeRecoverRate [multiplier]
+
+- `SetLifeRecoverRate [multiplier]`
 HP recovery will be multiplied by this value.
-SetPlayerMaxStaminaRate [multiplier]
+
+- `SetPlayerMaxStaminaRate [multiplier]`
 Multiplies max stamina.
-SetStaminaRecoverRate [multiplier]
+
+- `SetStaminaRecoverRate [multiplier]`
 Stamina recovery will be multiplied by this value.
-SetStaminaConsumeRatio [multiplier]
+
+- `SetStaminaConsumeRatio [multiplier]`
 Multiplies stamina consumption speed.
-SetPlayerMaxHungerRate [multiplier]
+
+- `SetPlayerMaxHungerRate [multiplier]`
 Max Fullness will be multiplied by this value.
-GMSetHungerDecRate [multiplier]
+
+- `GMSetHungerDecRate [multiplier]`
 Multiplies Fullness consumption speed.
-GMSetBodyHungerAddRate [multiplier]
+
+- `GMSetBodyHungerAddRate [multiplier]`
 Multiplies amount of Fullness recovered by eating.
-SetBodyWaterMaximumRate [multiplier]
+
+- `SetBodyWaterMaximumRate [multiplier]`
 Max Hydration will be multiplied by this value.
-GMSetWaterDecRate [multiplier]
+
+- `GMSetWaterDecRate [multiplier]`
 Multiplies Hydration consumption speed.
-GMSetBodyWaterAddRate [multiplier]
+
+- `GMSetBodyWaterAddRate [multiplier]`
 Multiplies amount of Hydration recovered by drinking.
-SetBreathRecoverRate [multiplier]
+
+- `SetBreathRecoverRate [multiplier]`
 Multiplies max Oxygen.
-SetBreathRecoverRate [multiplier]
+
+- `SetBreathRecoverRate [multiplier]`
 Max Oxygen will be multiplied by this value.
-SetPlayerBreathCostRate [multiplier]
+
+- `SetPlayerBreathCostRate [multiplier]`
 Multiplies Oxygen consumption speed.
-GMSetPlayerHealthRate [multiplier]
+
+- `GMSetPlayerHealthRate [multiplier]`
 Multiplies amount of HP recovered from meds.
-GMSetFoodDragDurationRate [multiplier]
+
+- `GMSetFoodDragDurationRate [multiplier]`
 Multiplies the duration of effect of food and meds.
-List of Vehicle Commands
-GMVehiclePlayerDamageRatio=0
+
+## List of Vehicle Commands
+- `GMVehiclePlayerDamageRatio=0`
 Multiplies the amount of damage vehicles deal to players. min 0，max100
-GMVehiclePlayerDamageRatio=0
+
+- `GMVehiclePlayerDamageRatio=0`
 Multiplies the amount of resources collected by vehicles. min 0，max100
-GMVehicleDamageRate
+
+- `GMVehicleDamageRate`
 Multiplies the amount of resources collected by vehicles.
-List of NPC Commands
-SetNpcRespawnRate [multiplier]
+
+## List of NPC Commands
+- `SetNpcRespawnRate [multiplier]`
 Multiplies time before dead wild NPCs can respawn.
-SetAnimalBodyStayTime  [time (in seconds)]
+
+- `SetAnimalBodyStayTime  [time (in seconds)]`
 Animal NPC corpses will disappear after this amount of time (in seconds)
-SetHumanBodyStayTime  [time (in seconds)]
+
+- `SetHumanBodyStayTime  [time (in seconds)]`
 Human NPC corpses will disappear after this amount of time (in seconds)
-GMSetNPCLootableItemRate [multiplier]
+
+- `GMSetNPCLootableItemRate [multiplier]`
 Multiplies the amount of items dropped by a wild NPC on death.
-SetWildNPCDamageRate [multiplier]
+
+- `SetWildNPCDamageRate [multiplier]`
 Multiplies the damage dealt by wild NPCs.
-SetWildNPCHealthRate [multiplier]
+
+- `SetWildNPCHealthRate [multiplier]`
 Multiplies the HP of wild NPCs.
-SetWildNPCSpeedRate [multiplier]
+
+- `SetWildNPCSpeedRate [multiplier]`
 Multiplies the movement speed of wild NPCs.
-SetCityNPCLevelRate [multiplier]
+
+- `SetCityNPCLevelRate [multiplier]`
 Multiplies the level of raid NPCs, making them more powerful.
-SetCityNPCDamageRate [multiplier]
+
+- `SetCityNPCDamageRate [multiplier]`
 Multiplies the damage dealt by raid NPCs.
-SetCityNPCHealthRate [multiplier]
+
+- `SetCityNPCHealthRate [multiplier]`
 Multiplies the HP of raid NPCs.
-SetCityNPCSpeedRate [multiplier]
+
+- `SetCityNPCSpeedRate [multiplier]`
 Multiplies the movement speed of raid NPCs.
-SetCityNPCNumRate [multiplier]
+
+- `SetCityNPCNumRate [multiplier]`
 Multiplies the total amount of raid NPCs summoned each round.
-SetNpcDisplayDistance [distance]
+
+- `SetNpcDisplayDistance [distance]`
 Max distance at which you can see an NPC's name (in meters)
-GMSetInventoryGainRate [multiplier]
+
+- `GMSetInventoryGainRate [multiplier]`
 Multiplies the amount of resources received upon collection.
-GMSetCityAtkNPCLootItemRate [multiplier]
+
+- `GMSetCityAtkNPCLootItemRate [multiplier]`
 Multiplies the amount of items dropped by a raid NPC on death.
-List of Weapon combat Commands
-SetMeleeNpcDamageRatio [multiplier]
+## List of Weapon combat Commands
+- `SetMeleeNpcDamageRatio [multiplier]`
 Multiplies melee weapon damage that characters deal to NPCs.
-SetRangedNpcDamageRatio [multiplier]
+
+- `SetRangedNpcDamageRatio [multiplier]`
 Multiplies ranged weapon damage that characters deal to NPCs.
-SetMeleePlayerDamageRatio [multiplier]
+
+- `SetMeleePlayerDamageRatio [multiplier]`
 Multiplies melee weapon damage that characters deal to players.
-SetRangedPlayerDamageRatio [multiplier]
+
+- `SetRangedPlayerDamageRatio [multiplier]`
 Multiplies ranged weapon damage that characters deal to players.
-SetMeleeConstructDamageRatio [multiplier]
+
+- `SetMeleeConstructDamageRatio [multiplier]`
 Multiplies melee weapon damage that characters deal to structures.
-GMSetToolDamageRate [multiplier]
+
+- `GMSetToolDamageRate [multiplier]`
 Multiplies damage that tools deal to resources.
-GMSetDurabilityCostRate [multiplier]
+
+- `GMSetDurabilityCostRate [multiplier]`
 Multiplies durability lost when using tools, weapons, and armor.
-List of Collection Production Commands
-GMSetMaxRetrieveProductsRate [max multiplier] (Default -1 means no upper limit is determined)
+
+## List of Collection Production Commands
+- `GMSetMaxRetrieveProductsRate [max multiplier] (Default -1 means no upper limit is determined)`
 Controls max gains from collection. This value must be bigger than other collection rates.
-GMSetTreeGainRate [multiplier]
+
+- `GMSetTreeGainRate [multiplier]`
 Multiplies amount of wood collected.
-GMSetBushGainRate [multiplier]
+
+- `GMSetBushGainRate [multiplier]`
 Multiplies amount of plants collected.
-GMSetOreGainRate [multiplier]
+
+- `GMSetOreGainRate [multiplier]`
 Multiplies amount of ore collected.
-GMSetCropReapRate [multiplier]
+
+- `GMSetCropReapRate [multiplier]`
 Multiplies amount of crops collected.
-GMSetFleshGainRate [multiplier]
+
+- `GMSetFleshGainRate [multiplier]`
 Multiplies amount of items collected from corpses.
-GMSetCropGrowRate [multiplier]
+
+- `GMSetCropGrowRate [multiplier]`
 Multiplies growth speed of planted crops.
-List of Building Defense Commands
-SetPlayerMaxHouseFlagNumber
+
+## List of Building Defense Commands
+- `SetPlayerMaxHouseFlagNumber`
 Max number of Beacons each player can build.
-SetGJConstructMaxNumRatio [multiplier]
+
+- `SetGJConstructMaxNumRatio [multiplier]`
 Max number of work-type structures each player can build will be multiplied by this value.
-SetHFTrapMaxNum [amount]
+
+- `SetHFTrapMaxNum [amount]`
 Max number of traps that can be within Beacon coverage.
-SetHFTurretMaxNum [amount]
+
+- `SetHFTurretMaxNum [amount]`
 Max number of turrets that can be within Beacon coverage.
-SetConstructDefenseRatio [ratio]
+
+- `SetConstructDefenseRatio [ratio]`
 Damage taken is multiplied by this value.
-SetTrapDefenseRatio [ratio]
+
+- `SetTrapDefenseRatio [ratio]`
 Damage taken is multiplied by this value.
-SetTrapDamageRatio [multiplier]
+
+- `SetTrapDamageRatio [multiplier]`
 Multiplies damage dealt by traps.
-SetTurretDamageRatio [multiplier]
+
+- `SetTurretDamageRatio [multiplier]`
 Multiplies damage dealt by turrets.
-SetConstructMaxHealthRatio [multiplier]
+
+- `SetConstructMaxHealthRatio [multiplier]`
 Multiplies the max Durability of structures.
-SetConstructReturnHPRatio [multiplier]
+
+- `SetConstructReturnHPRatio [multiplier]`
 Multiplies the Durability recovery speed of placed structures.
-SetHouseFlagRepairHealthRatio [multiplier]
+
+- `SetHouseFlagRepairHealthRatio [multiplier]`
 Multiplies the Durability recovery speed of structures within auto-repair range of a Beacon.
-GMSetTTC_Oil_Rate [multiplier]
+
+- `GMSetTTC_Oil_Rate [multiplier]`
 Multiplies resources collected from Oil Wells.
-GMSetWaterCollector_Rate [multiplier]
+
+- `GMSetWaterCollector_Rate [multiplier]`
 Multiplies resources collected from Dew Collectors.
-GMSetTTC_Ore_Rate [multiplier]
+
+- `GMSetTTC_Ore_Rate [multiplier]`
 Multiplies resources collected from Mines.
-GMSetTTC_Fish_Rate [multiplier]
+
+- `GMSetTTC_Fish_Rate [multiplier]`
 Multiplies resources collected from Fish Baskets.
-SetCHFDamagedRateByPlayer [ratio]
+
+- `SetCHFDamagedRateByPlayer [ratio]`
 Damage that beacons take from player firearms is multiplied by this value.
-SetCHFDamagedRateByVehicle [ratio]
+
+- `SetCHFDamagedRateByVehicle [ratio]`
 Damage that beacons take from player vehicles is multiplied by this value.
-SetCHFDamagedRateByNpc [ratio]
+
+- `SetCHFDamagedRateByNpc [ratio]`
 Damage that beacons take from NPCs is multiplied by this value.
-SetHouseFlagExcitantTime [number]
+
+- `SetHouseFlagExcitantTime [number]`
 Sets the amount of time that beacons can be attacked. Values must be between 0 and 24.
